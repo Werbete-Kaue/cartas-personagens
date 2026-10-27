@@ -1,4 +1,6 @@
-function render() {
+export class PersonagemView {
+
+    render() {
     this.ulPersonagens.innerHTML = ''
     this.personagens.forEach(personagem => {
         const personagemLI = this.criaPersonagem(personagem)
@@ -102,3 +104,4 @@ escutarEventoDuelo() {
         this.render()
     })
 }*/
+}
