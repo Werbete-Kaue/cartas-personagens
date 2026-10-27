@@ -1,10 +1,12 @@
-const personagemPedrinho = {
-    nome: 'Pedrinho',
-    vida: 7,
-    mana: 12,
-    level: 5,
-    tipo: 'Mago',
-}
+import { Personagem } from "./modules/personagem"
+
+// const personagemPedrinho = {
+//     nome: 'Pedrinho',
+//     vida: 7,
+//     mana: 12,
+//     level: 5,
+//     tipo: 'Mago',
+// }
 
 const personagemJose = {
     nome: 'Jose',
@@ -13,4 +15,21 @@ const personagemJose = {
     level: 3,
     tipo: 'Arqueiro',
 }
+
+class Personagem {
+    nome
+    vida
+    mana
+    level
+    tipo
+    descricao
+}
+
+const personagemPedrinho = new Personagem()
+personagemPedrinho.nome = "Pedrinho"
+personagemPedrinho.mana = 12
+personagemPedrinho.vida = 7
+// personagemPedrinho.level =
+// personagemPedrinho.tipo =
+// personagemPedrinho.descricao =
 
