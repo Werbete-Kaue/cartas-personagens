@@ -10,4 +10,11 @@ export class Arqueiro extends Personagem {
         this.destreza = destreza
     }
 
+    obterInsignia() {
+        if (this.destreza >= 5)
+            return `Dominador de flechas`
+
+        return super.obterInsignia()
+    }
+
 }
