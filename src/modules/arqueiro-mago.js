@@ -12,4 +12,8 @@ export class ArqueiroMago extends Personagem {
         this.ladoArqueiro = new Arqueiro(nome, level, destreza)
         this.ladoMago = new Mago(nome, level, elementoMagico, levelMagico, inteligencia)
     }
+
+    obterInsignia() {
+        return `${this.ladoArqueiro.obterInsignia()} e ${this.ladoMago.obterInsignia()}`
+    }
 }
