@@ -1,8 +1,8 @@
 import { Personagem } from "./personagem.js";
 
 export class Arqueiro extends Personagem {
-
-    tipo = "Arqueiro"
+    static tipo = 'Arqueiro'
+    static descricao = 'Você tem o meu arco!'
     destreza
 
     constructor(nome, level, destreza) {
@@ -10,11 +10,10 @@ export class Arqueiro extends Personagem {
         this.destreza = destreza
     }
 
-    obterInsignia() {
+   obterInsignia() {
         if (this.destreza >= 5)
             return `Dominador de flechas`
 
         return super.obterInsignia()
     }
-
 }
